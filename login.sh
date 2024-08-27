@@ -19,12 +19,12 @@ trap '' 2
 echo -e "\e[1;32m      
 
 
-██╗░░░░░░█████╗░░██████╗░██╗███╗░░██╗
-██║░░░░░██╔══██╗██╔════╝░██║████╗░██║
-██║░░░░░██║░░██║██║░░██╗░██║██╔██╗██║
-██║░░░░░██║░░██║██║░░╚██╗██║██║╚████║
-███████╗╚█████╔╝╚██████╔╝██║██║░╚███║
-╚══════╝░╚════╝░░╚═════╝░╚═╝╚═╝░░╚══╝ 
+                     ██╗░░░░░░█████╗░░██████╗░██╗███╗░░██╗
+                     ██║░░░░░██╔══██╗██╔════╝░██║████╗░██║
+                     ██║░░░░░██║░░██║██║░░██╗░██║██╔██╗██║
+                     ██║░░░░░██║░░██║██║░░╚██╗██║██║╚████║
+                     ███████╗╚█████╔╝╚██████╔╝██║██║░╚███║
+                     ╚══════╝░╚════╝░░╚═════╝░╚═╝╚═╝░░╚══╝ 
                                                            
                                                            
 
@@ -42,7 +42,7 @@ if [[ \$pass == $password && \$user == $username ]]; then
 sleep 3
 clear
 cd $HOME
-cd custom-Termux
+cd Custom-Termux
 cd Song
 python sound_effect.py
 clear
@@ -61,15 +61,7 @@ echo -e "\e[1;32mChào mừng bạn đến với Termux!\e[0m"
 echo -e "\e[1;34mHôm nay là: \e[1;33m$(date)\e[0m"
 echo -e "\e[1;36mBạn đang sử dụng \e[1;31m$(uname -o)\e[1;36m trên \e[1;35m$(uname -m)\e[0m"
 echo -e "\e[1;36mPhiên bản Android: \e[1;31m$(getprop ro.build.version.release)\e[0m"
-echo -e "\e[1;36mCPU: \e[1;31m$(cat /proc/cpuinfo | grep 'Hardware' | awk -F': ' '{print $2}')\e[0m"
-memory_total=$(free -m | grep Mem | awk '{print $2}')
-memory_used=$(free -m | grep Mem | awk '{print $3}')
-echo -e "\e[1;35mBộ nhớ: \e[1;33m${memory_used}MiB / ${memory_total}MiB\e[0m"
-rom_total=$(df /data | grep /data | awk '{print $2}' | sed 's/G//')
-rom_used=$(df /data | grep /data | awk '{print $3}' | sed 's/G//')
-rom_remaining=$(echo "$rom_total - $rom_used" | bc)
-rom_percent=$(echo "scale=2; ($rom_remaining * 100) / $rom_total" | bc)
-echo -e "\e[1;35mROM còn lại:\e[1;33m ${rom_percent}%\e[0m"
+echo -e "\e[1;36mCPU: \e[1;31m$(cat /proc/cpuinfo | grep 'Hardware' | awk -F': ' '{print $2}')\e[0m"; memory_total=$(free -m | grep Mem | awk '{print $2}'); memory_used=$(free -m | grep Mem | awk '{print $3}'); echo -e "\e[1;35mBộ nhớ: \e[1;33m${memory_used}MiB / ${memory_total}MiB\e[0m"; rom_total=$(df /data | grep /data | awk '{print $2}' | sed 's/G//'); rom_used=$(df /data | grep /data | awk '{print $3}' | sed 's/G//'); rom_remaining=$(echo "$rom_total - $rom_used" | bc); rom_percent=$(echo "scale=2; ($rom_remaining * 100) / $rom_total" | bc); echo -e "\e[1;35mROM còn lại:\e[1;33m ${rom_percent}%\e[0m"
 << comment
 shopt -s autocd
 shopt -s cdspell
@@ -89,7 +81,7 @@ shopt -s compat32
 shopt -s lithist
 comment
 cd $HOME
-cd custom-Termux
+cd Custom-Termux
 cd
 else
 echo ""
