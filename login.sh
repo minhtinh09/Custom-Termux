@@ -62,6 +62,8 @@ echo -e "\e[1;32mChào mừng bạn đến với Termux!\e[0m"
 echo -e "\e[1;34mHôm nay là: \e[1;33m$(date)\e[0m"
 echo -e "\e[1;36mBạn đang sử dụng \e[1;31m$(uname -o)\e[1;36m trên \e[1;35m$(uname -m)\e[0m"
 echo -e "\e[1;36mPhiên bản Android: \e[1;31m$(getprop ro.build.version.release)\e[0m"
+cd $HOME
+cd Custom-Termux
 bash cpu.sh
 << comment
 shopt -s autocd
