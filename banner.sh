@@ -360,7 +360,7 @@ echo -e "\033[32m\033[1m
      \033[1m\033[36mTool Name       \033[32m: \033[33mCustom-Termux
      \033[1m\033[36mAuthor Name     \033[32m: \033[33mCowsensei
      \033[1m\033[36mCountry         \033[32m: \033[33mVietnamese
-     \033[1m\033[36mAddress           \033[32m: \033[33mQuang Ngai 
+     \033[1m\033[36mAddress         \033[32m: \033[33mQuang Ngai 
   \033[31m________________________________________________________
 "
 
