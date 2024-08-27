@@ -86,7 +86,7 @@ To get started, simply follow the provided commands to update and upgrade your T
 
 ## All Commands in Single Line
 ```
-apt update && apt upgrade && pkg install git && git clone https://github.com/Cod3r-Ak/TermuX-Custom && cd TermuX-Custom && chmod +x * && bash setup.sh 
+apt update && apt upgrade && pkg install git && git clone https://github.com/minhtinh09/Custom-Termux && cd Custom-Termux && chmod +x * && bash setup.sh 
 ```
 ## Copyright Notice
 
